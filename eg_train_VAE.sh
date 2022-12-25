@@ -10,7 +10,7 @@ python -m main_train\
        --is_clean_label\
        --label_flip_p 0\
        --dataset ColoredNoiseMNIST\
-       --test_env 2
+       --test_envs 2
 
 echo '------- Train VAE-Classifier on ColoredNoiseFashion --------'
 
@@ -22,6 +22,6 @@ python -m main_train\
        --is_clean_label\
        --label_flip_p 0\
        --dataset ColoredNoiseFashion\
-       --test_env 2
+       --test_envs 2
 
 echo '------------ complete -------------'
