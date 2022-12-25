@@ -5,10 +5,10 @@ _" When Empirical Risk Minimization Fails or Succeeds at Domain
 Generalization in Causal View"_, which has been under peer review
 in the **IEEE Transactions on Neural Networks and Learning Systems**.
 
-The repository is mainly modified from the 
+The repository is developed mainly based on the 
 [DomainBed](https://github.com/facebookresearch/DomainBed). 
-Therefore, the usage is similar and the DomainBed takes the
-main credits for the code designs. Our contributions have
+Therefore, the usage is similar and the DomainBed also takes
+credits for the code designs. Our contributions have
 been clarified in the paper. 
 
 ## Data Settings
