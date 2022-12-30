@@ -1,8 +1,8 @@
 # Domain Generalization Success and Failure of ERM
 
 The repository contains the experiment implementations of the paper entitled
-_" When Empirical Risk Minimization Fails or Succeeds at Domain
-Generalization in Causal View"_, which has been under peer review
+_"When Does Empirical Risk Minimization Fail or Succeed at Domain 
+Generalization? A Causal Perspective Study"_, which has been under peer review
 in the **IEEE Transactions on Neural Networks and Learning Systems**.
 
 The repository is developed mainly based on the 
