@@ -1,4 +1,4 @@
-# Domain Generalization of ERM
+# Domain Generalization Success and Failure of ERM
 
 The repository contains the experiment implementations of the paper entitled
 _" When Empirical Risk Minimization Fails or Succeeds at Domain
