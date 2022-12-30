@@ -56,7 +56,7 @@ def print_results_tables(records, selection_method, latex):
             print("\\subsubsection{{{}}}".format(dataset))
         test_envs = range(datasets.num_environments(dataset))
 
-        table = [[None for _ in [*test_envs, "Avg"]] for _ in alg_names]
+        table = [[None for _ in [*test_envs, "Δ^*","Avg"]] for _ in alg_names]
         for i, algorithm in enumerate(alg_names):
             means = []
             for j, test_env in enumerate(test_envs):
@@ -71,13 +71,16 @@ def print_results_tables(records, selection_method, latex):
                 mean, err, table[i ][j] = os_utils.format_mean(trial_accs, latex)
                 means.append(mean)
             if None in means:
+                table[i][-2] = "X"
                 table[i ][-1] = "X"
             else:
+                table[i][-2] = "{:.1f}".format(max(means)-min(means))
                 table[i ][-1] = "{:.1f}".format(sum(means) / len(means))
 
         col_labels = [
             "Algorithm",
             *datasets.get_dataset_class(dataset).ENVIRONMENTS,
+            "Δ^*",
             "Avg"
         ]
         header_text = (f"Dataset: {dataset}, "
@@ -90,7 +93,7 @@ def print_results_tables(records, selection_method, latex):
         print()
         print("\\subsubsection{Averages}")
 
-    table = [[None for _ in [*dataset_names, "Avg"]] for _ in alg_names]
+    table = [[None for _ in [*dataset_names,"Δ^*", "Avg"]] for _ in alg_names]
     for i, algorithm in enumerate(alg_names):
         means=[]
         for j, dataset in enumerate(dataset_names):
@@ -106,11 +109,13 @@ def print_results_tables(records, selection_method, latex):
             mean, err, table[i][j] = os_utils.format_mean(trial_averages, latex)
             means.append(mean)
         if None in means:
+            table[i][-2] = "X"
             table[i][-1] = "X"
         else:
+            table[i][-2] = "{:.1f}".format(max(means) - min(means))
             table[i][-1] = "{:.1f}".format(sum(means) / len(means))
 
-    col_labels = ["Algorithm", *dataset_names, "Avg"]
+    col_labels = ["Algorithm", *dataset_names, "Δ^*","Avg"]
     header_text = f"Averages, model selection method: {selection_method.name}"
     os_utils.print_table(table, header_text, alg_names,sub_alg_names_plus, col_labels, colwidth=25,
         latex=latex)
