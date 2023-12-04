@@ -1,0 +1,2 @@
+store the downloaded data such as MNIST, Fashion MNIST, and CIFAR10
+The datasets are downloaded automatically.
