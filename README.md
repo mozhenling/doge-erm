@@ -7,7 +7,7 @@ Perspectives"_, which has been under a peer review process.
 The  <font color=red>Supplementary Materials </font> of the paper
 are placed in `.\additional readings`.
 
-## Simulated Visualization Experiments
+## Simulated Visualization Experiments for Theory Verification
 (Fig.5 of the paper)
 
 Download the trained models, place the `train_outs` folder 
@@ -26,8 +26,8 @@ and `.\outputs\InOutComp_B` (the test & extra test envs)
 + or, [Baidu Netdisk](https://pan.baidu.com/s/1CndW1WNe1p2i8P4RZusrbA?pwd=s8tu)
 & Password: s8tu
 
-## Simulated Numerical Experiments 
-(TABLE I of the paper & TABLE V of the Supplementary Materials)
+## Simulated Numerical Experiments for Theory Verification
+(TABLE I of the paper & TABLE VI of the Supplementary Materials)
 
 Download the sweep records, place them under `'.\outputs\sweep_outs'`,
 and use `eg_results.sh` to obtain the same results reported in the paper.   
@@ -52,11 +52,11 @@ obtain the similar results.
 + or, [Baidu Netdisk](https://pan.baidu.com/s/1XNsuc7mjTpsL9dorZS74vA?pwd=4h3j)
 & Password：4h3j
 
-## Experiments on Real-World Datasets 
+## Experiments on Real-World Datasets for Theory Verification
 (TABLE II of the paper)
 
 The codes, data, sweep records of the experiments based on 
-the real-world datasets are available at :
+the real-world datasets for theory verification are available at :
 
 + [Google Drive](https://drive.google.com/file/d/1zTEM5_BGZo-FXncEkxE7baOKAQYj1ir_/view?usp=sharing)  
 + or, [Baidu Netdisk](https://pan.baidu.com/s/1ujjqYQaIV7s1P5757Ut7wQ?pwd=fq24)
@@ -67,9 +67,41 @@ Alternatively, you can install the same packages given in `requirements_practica
 , delete old records `./outputs/sweep_outs`, employ ` eg_sweep.sh` to rerun the
 experiments, and use `eg_results.sh` to obtain the similar results.
 
+## Experiments on Real-World Datasets for FISIP Verification
+(TABLE III of the paper)
+he codes, data, sweep records of the experiments based on 
+the real-world datasets for FISIP verification are available
+in the following links:
+
++ codes:\
+[Google Drive](https://drive.google.com/file/d/1Quwj0mvYPNB8aUDvbhAQCP_Ai_AUGuVZ/view?usp=sharing)\
+or,
+[Baidu Netdisk](https://pan.baidu.com/s/1jwwJZSKd0xuE7NbOr0msBw?pwd=vz84) 
+Password: vz84
+
++ datasets:\
+[Google Drive](https://drive.google.com/file/d/1zHB-UuWONpQrR93WhDk9w0D-pDGG5SRS/view?usp=sharing)\
+or,
+[Baidu Netdisk](https://pan.baidu.com/s/17QsQnmwrdexupUUP8cfkUQ?pwd=qnbe) 
+Password: qnbe
+
++ sweep records\
+[Google Drive](https://drive.google.com/file/d/1t5ObDhjfXBjrOm1-J0jJzbBy8DpPAAGX/view?usp=sharing)\
+or,
+[Baidu Netdisk](https://pan.baidu.com/s/1GWtP1Wk6pxxvKRB8SLbTWA?pwd=kmph)
+Password: kmph
+
+The sweep records show the results presented in the paper. For retraining,
+please download codes and the datasets. Place the datafolder, say, 
+`Prostate` under `./datasets` of the codes. Then, use `eg_sweep.sh` to run one example of random search and use `eg_result.sh` to collect the results. Note that `FISIP` is for 
+instance wise classification, while `FISIPseg` is for element wise classification.
+
+
 ## Acknowledgement
 The repository is developed mainly based on the 
 [DomainBed](https://github.com/facebookresearch/DomainBed). 
 Therefore, the usage is similar and the DomainBed also takes
-credits for the code designs. Our contributions have
+credits for the code designs. We would like to thank the authors
+of the Domainbed for sharing the codes. We also want the thank all
+the authors of public datasets used in this study. Our contributions have
 been clarified in the paper. 
