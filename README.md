@@ -69,7 +69,7 @@ experiments, and use `eg_results.sh` to obtain the similar results.
 
 ## Experiments on Real-World Datasets for FISIP Verification
 (TABLE III of the paper)
-he codes, data, sweep records of the experiments based on 
+The codes, data, sweep records of the experiments based on 
 the real-world datasets for FISIP verification are available
 in the following links:
 
