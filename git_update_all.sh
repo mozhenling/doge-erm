@@ -4,7 +4,7 @@ echo '------- update git and remote --------'
 
 git add .
 
-git commit . -m 'add FISIP'
+git commit . -m 'update supplementary'
 
 git push origin master
 
