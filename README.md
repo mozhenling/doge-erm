@@ -73,7 +73,7 @@ The codes, data, sweep records of the experiments based on
 the real-world datasets for FISIP verification are available
 in the following links:
 
-+ codes:\
++ codes (ERM & FISIP):\
 [Google Drive](https://drive.google.com/file/d/1TsU5P7fOHCmP7I0TwdKtzmKRWpx8ZHOI/view?usp=sharing)\
 or,
 [Baidu Netdisk](https://pan.baidu.com/s/1VkStvcOAA4B1uw4nXcMSxA?pwd=24zy) 
@@ -85,11 +85,17 @@ or,
 [Baidu Netdisk](https://pan.baidu.com/s/17QsQnmwrdexupUUP8cfkUQ?pwd=qnbe) 
 Password: qnbe
 
-+ sweep records\
++ sweep records (ERM & FISIP) \
 [Google Drive](https://drive.google.com/file/d/1t5ObDhjfXBjrOm1-J0jJzbBy8DpPAAGX/view?usp=sharing)\
 or,
 [Baidu Netdisk](https://pan.baidu.com/s/1GWtP1Wk6pxxvKRB8SLbTWA?pwd=kmph)
 Password: kmph
+
++ dropout experiemnts\
+[Google Drive](https://drive.google.com/file/d/1gHpb-Uvijfj_hPmuPD8ob68cNZ47FoMh/view?usp=sharing)\
+or,
+[Baidu Netdisk](https://pan.baidu.com/s/1cFmJEpdA0g3hBhMC6M8qaw?pwd=4wgx)
+Password: 4wgx
 
 The sweep records show the results presented in the paper. For retraining,
 please download codes and the datasets. Place the datafolder, say, 

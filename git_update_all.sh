@@ -4,7 +4,7 @@ echo '------- update git and remote --------'
 
 git add .
 
-git commit . -m 'update readme'
+git commit . -m 'add dropout'
 
 git push origin master
 
