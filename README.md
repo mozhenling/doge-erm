@@ -2,7 +2,7 @@
 
 The repository is developed for the paper entitled
 _"Domain Generalization Study of Empirical Risk Minimization from Causal
-Perspectives"_, which has been under a peer review process.
+Perspectives"_, which has been accepted for publication in **IEEE Transactions on Multimedia**.
 
 The  <font color=red>Supplementary Materials </font> of the paper
 are placed in `.\additional readings`.
